@@ -1,1 +1,25 @@
-<p>Hello from partials/_header.html</p>
+    <!-- HEADER content -->
+    <header class="theme-blue"> 
+            <div class="wrap">
+                    <div class="header-top">
+                        <div class="logo">
+                                {{mixins.logo('logo')}}
+                                <div class="logo__text">
+                                    <p>Neurobot<span>.trading</span></p>
+                                    <p> Neural network forecasting</p>
+                                </div>
+                                
+                        </div>
+                        <nav class="header-nav__item">
+                                {{ mixins.breadcrumbs([
+                                    {list: ['Forecasts', 'Tokens', 'About', 'Log In', 'Sign Up']}, 
+                                    {lang: ['Eng', 'Рус']}
+                                ]) }}
+                        </nav>
+                    </div>
+                    <div class="header-main">
+            
+                    </div>
+                </div>	
+        </header>
+        <!-- END content -->
