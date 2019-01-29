@@ -1,25 +1,30 @@
-    <!-- HEADER content -->
-    <header class="theme-blue"> 
-            <div class="wrap">
-                    <div class="header-top">
-                        <div class="logo">
-                                {{mixins.logo('logo')}}
-                                <div class="logo__text">
-                                    <p>Neurobot<span>.trading</span></p>
-                                    <p> Neural network forecasting</p>
-                                </div>
-                                
-                        </div>
-                        <nav class="header-nav__item">
-                                {{ mixins.breadcrumbs([
-                                    {list: ['Forecasts', 'Tokens', 'About', 'Log In', 'Sign Up']}, 
-                                    {lang: ['Eng', 'Рус']}
-                                ]) }}
-                        </nav>
-                    </div>
-                    <div class="header-main">
-            
-                    </div>
-                </div>	
-        </header>
-        <!-- END content -->
+<!-- HEADER content -->
+<header class="header">
+  <div class="header__inner wrap">
+
+      <div class="logo">
+        <img src="img/logo.png" alt="logo">
+        <div class="logo__text">
+          <p>Neurobot<span>.trading</span></p>
+          <p> Neural network forecasting</p>
+        </div>
+      </div>
+      <div class="header-wrap">
+        <nav class="header-nav">
+          {{ mixins.menu([
+          {list: ['Forecasts', 'Tokens', 'About', 'Log In']}
+          ]) }}
+        </nav>
+        <div class="header-right">
+          <button class="btn">Sign Up</button>
+          <div class="lang">
+            <button class="btn lang__current">Eng</button>
+            <ul class="lang-list">
+              <li class="lang-list__item"><a class="lang__link" href="#">Рус</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+</header>
+<!-- END content -->
