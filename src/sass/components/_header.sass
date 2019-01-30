@@ -2,16 +2,13 @@
 	&__inner
 		display: flex
 		align-items: center
-	// height: 100vh
-
-.wrap
-	width: 1170px
-	margin: 0 auto
+		+sm
+			padding: 0 25px	
 
 .bg-blue
 	background-color: #00bdca
 
-.header-wrap
+.header-wrapper
 	padding: 66px 0
 	display: flex
 	align-items: center
@@ -19,6 +16,13 @@
 	justify-content: flex-end
 .logo
 	display: flex
+
+	&__img
+		width: 43px
+		height: 44px
+		+sm
+			width: 33px
+			height: 34px
 	&__text
 		margin-left: 12px
         
@@ -26,12 +30,14 @@
 			color: $white
             font-weight: 600
 			font-size: 24px
-			span
-				color: #56ecf6
+			+sm
+				font-size: 18px	
+		span
+			color: #56ecf6
 		p:nth-child(2)
 			font-size: 13px
 			font-weight: 400
-			line-height: 3px
+			line-height: 3pxgulp
 .logo__text p
     font-weight: 600
 
@@ -46,6 +52,9 @@
 	font-size: 16px
 	border-radius: 16px
 	font-weight: 600
+		+sm
+			font-size: 14px
+		
 
 .lang
 	position: relative
@@ -59,11 +68,11 @@
 		.lang-list
 			opacity: 1
 			visibility: visible
+		
 	&:hover .lang__current
 				border-bottom-left-radius: 0px	
-				border-bottom-right-radius: 0px				
-
-
+				border-bottom-right-radius: 0px	
+							
 
 .lang-list
 	position: absolute
@@ -93,7 +102,7 @@
 
 .lang__link:hover
 	text-decoration: underline
-	cursor: pointer		
+	cursor: pointer
 
 
 
