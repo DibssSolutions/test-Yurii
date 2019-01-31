@@ -2,24 +2,33 @@
     max-width: 990px
     display: flex
     justify-content: flex-end
+    position: relative
+    z-index: 2
+    +md
+        max-width: 900px
+    +sm
+        justify-content: center
 
 .preview
     max-width: 600px
     text-align: center
     color: #ffffff
     padding: 60px 0
-    +lg
+    margin-bottom: 116px
+    +md
         max-width: 450px
     &__title
         font-size: 72px
         font-weight: 600
-        +lg
+        +md
             font-size: 40px
+        +sm
+            font-size: 36px
     &__subtitle
         font-size: 30px
         font-weight: 600
         margin-bottom: 25px
-        +lg
+        +md
             font-size: 18px
 
 .btn_lg
@@ -29,3 +38,6 @@
     font-size: 18px
     font-weight: 600
     padding: 21px 71px
+    +sm
+        font-size: 16px
+        padding: 15px 52px
