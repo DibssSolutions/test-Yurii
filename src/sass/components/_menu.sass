@@ -2,6 +2,8 @@
 	display: flex
 	align-items: center
 	font-weight: 600
+	+sm
+		flex-direction: column
 
 	&__item
 		a
@@ -9,7 +11,17 @@
 			color: #ffffff
 			text-decoration: none
 			margin-right: 30px
-			+sm
+			+md
 				font-size: 14px
 				margin-right: 20px
+			+sm
+				margin-right: 0	
+				font-size: 13px
+		+sm:hover
+			text-decoration: underline	
+		+sm
+			padding: 10px 0
+	+sm:last-child
+			padding-bottom: 0
+
 

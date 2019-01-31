@@ -1,2 +1,31 @@
-p
-    color: red
+.preview-wrapper
+    max-width: 990px
+    display: flex
+    justify-content: flex-end
+
+.preview
+    max-width: 600px
+    text-align: center
+    color: #ffffff
+    padding: 60px 0
+    +lg
+        max-width: 450px
+    &__title
+        font-size: 72px
+        font-weight: 600
+        +lg
+            font-size: 40px
+    &__subtitle
+        font-size: 30px
+        font-weight: 600
+        margin-bottom: 25px
+        +lg
+            font-size: 18px
+
+.btn_lg
+    border-radius: 32px
+    background-color: #1d354e
+    color: #fefeff
+    font-size: 18px
+    font-weight: 600
+    padding: 21px 71px

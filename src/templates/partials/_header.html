@@ -1,28 +1,34 @@
 <!-- HEADER content -->
 <header class="header">
   <div class="header__inner wrapper">
-      <div class="logo">
-        <img src="img/logo.png" alt="logo" class="logo__img">
-        <div class="logo__text">
-          <p>Neurobot<span>.trading</span></p>
-          <p> Neural network forecasting</p>
+    <div class="logo">
+      <img src="img/logo.png" alt="logo" class="logo__img">
+      <div class="logo__text">
+        <p>Neurobot<span>.trading</span></p>
+        <p> Neural network forecasting</p>
+      </div>
+    </div>
+    <input type="checkbox" id="burger-menu" class="hidden-menu">
+    <label class="btn-menu" for="burger-menu">
+      <span class="first"></span>
+      <span class="second"></span>
+      <span class="third"></span>
+    </label>
+    <div class="header-wrapper">
+      <nav class="header-nav">
+        {{ mixins.menu([
+        {list: ['Forecasts', 'Tokens', 'About', 'Log In']}
+        ]) }}
+      </nav>
+      <div class="header-right">
+        <button class="btn">Sign Up</button>
+        <div class="lang">
+          <button class="lang-btn lang__current">Eng</button>
+          <ul class="lang-list">
+            <li class="lang-list__item"><a class="lang__link" href="#">Рус</a></li>
+          </ul>
         </div>
       </div>
-      <div class="header-wrapper">
-        <nav class="header-nav">
-          {{ mixins.menu([
-          {list: ['Forecasts', 'Tokens', 'About', 'Log In']}
-          ]) }}
-        </nav>
-        <div class="header-right">
-          <button class="btn">Sign Up</button>
-          <div class="lang">
-            <button class="btn lang__current">Eng</button>
-            <ul class="lang-list">
-              <li class="lang-list__item"><a class="lang__link" href="#">Рус</a></li>
-            </ul>
-          </div>
-        </div>
     </div>
   </div>
 </header>
