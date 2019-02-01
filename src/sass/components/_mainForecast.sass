@@ -1,0 +1,134 @@
+.bg-main
+    position: absolute
+    width: 100%
+    top: 901px
+    padding: 700px 0px
+    background-color: #1d354e
+    transform: skewY(30deg)
+    z-index: -2
+    +md
+        padding: 400px 0
+        top: 769px
+    +sm
+        padding: 200px 0
+        top: 625px
+.forecast-wrapper
+    max-width: 980px
+    transform: skewY(-30deg)
+    +md
+        padding: 0 20px
+
+.forecast-block
+    font-weight: 400
+    color: #ffffff
+    &__title
+        font-size: 60px
+        +md
+            font-size: 48px
+        +sm
+            font-size: 30px
+    &__desc
+        font-size: 24px
+        +md
+            font-size: 18px
+        +sm
+            font-size: 14px
+
+.forecast-block__currency
+    padding: 50px 0
+
+.value
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    font-weight: 700
+    box-sizing: border-box
+    &__item
+        font-size: 30px
+        border: 8px solid #223e5c
+        border-radius: 8px
+        padding: 13px 29px
+        cursor: pointer
+        +md
+            font-size: 18px
+            border: 6px solid #223e5c
+        +sm
+            width: 30%
+            text-align: center
+            padding: 15px 0px
+            margin-bottom: 10px
+            font-size: 16px
+    &__item:hover
+        background-color: #00bdca
+        border-color: #00bdca
+    &__link
+        text-decoration: none
+        color: #ffffff
+
+.graph
+    transform: skewY(-30deg)
+    margin: 0 25px
+    display: flex
+    justify-content: center
+    position: relative
+    max-width: 1900px
+    z-index: -1
+    &__img_lg
+        width: 100%
+        height: 100%
+        +md
+            display: none
+
+.graph__img_md
+    display: none
+    +md
+        width: 100%
+        height: 100%
+        display: block
+    +sm
+        display: none
+
+.graph__img_sm
+    display: none
+    +sm
+        width: 100%
+        height: 100%
+        display: block
+
+.value-now
+    display: flex
+    position: relative
+    z-index: 1
+    top: 92px
+    left: 58px
+    text-align: right
+    max-width: 365px
+    justify-content: space-between
+    +sm
+        position: static
+    &__item
+        font-size: 24px
+        font-weight: 700
+        +sm
+            font-size: 18px
+    &__item:nth-child(n+2) div:first-child
+        font-size: 12px
+        font-weight: 500
+        +sm
+            font-size: 12px
+    &__item:nth-child(3) div:last-child
+        font-size: 12px
+        color: #7eec4e
+        font-weight: 500
+        +sm
+            font-size: 12px
+
+
+.value-now__item:first-child
+    align-self: center
+
+
+
+
+
+

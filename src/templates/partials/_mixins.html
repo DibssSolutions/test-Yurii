@@ -27,3 +27,31 @@
 		{% endfor %}
 	</div>
 {% endmacro %}
+
+{% macro currency(valuta) %}
+	<ul class="value">
+		{% for i in valuta %}
+			{% if i.list %}
+				{% for i in i.list %}
+					<li class="value__item"><a href="#" class="value__link">{{i}}</a></li>
+				{% endfor %}
+			{% endif %}
+		{% endfor %}
+	</ul>
+{% endmacro %}
+
+{% macro valueNow(number) %}
+	<div class="value-now">
+		{% for i in number %}
+			{% if i.list %}
+				{% for i in i.list %}
+					<div class="value-now__item">
+						{% for j in i %}
+				    		<div>{{j}}</div>
+						{% endfor %}
+					</div>
+						{% endfor %}
+				{% endif %}
+		{% endfor %}
+	</div>
+{% endmacro %}

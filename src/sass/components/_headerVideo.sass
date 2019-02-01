@@ -7,7 +7,7 @@
     
 
 
-.video:before
+.video-btn
     content: url(../img/play_btn.png)
     color: #fff
     position: absolute
@@ -16,6 +16,11 @@
     transform: translate(-50%, -50%)
     cursor: pointer
     z-index: 4
+    +sm
+        width: 60px
+        height: 60px
+    +sm:hover
+        background-color: black
 .video video::-webkit-media-controls-panel
     display: none
 
@@ -27,7 +32,6 @@
     +md
         padding: 30px
     +sm
-        margin-top: 198px
         padding: 10px
         padding-bottom: 5px
 

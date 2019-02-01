@@ -1,0 +1,22 @@
+<div class="main">
+  <div class="bg-main">
+    <section class="forecast-block forecast-wrapper wrapper">
+      <h2 class="forecast-block__title">Popular forecasts</h2>
+      <p class="forecast-block__desc">The forecasts are updated every 30 minutes</p>
+      <div class="forecast-block__currency">
+        {{ mixins.currency([
+        {list: ['BTC', 'LTC', 'ETH', 'XRP', 'DASH', 'XMR']}
+        ]) }}
+      </div>
+            {{ mixins.valueNow([
+                { list: [['XRP/USD'],['now', '12,500'], ['24 hours', '12,550', '317.00 (5.10%)']]}
+                ]) }}
+    </section>
+    <div class="graph">
+        <img class="graph__img_lg" src="img/forecasts.png" alt="forecasts currency">
+        <img class="graph__img_md" src="img/forecast-md.png" alt="forecasts currency">
+        <img class="graph__img_sm" src="img/forecast-sm.png" alt="forecasts currency">
+    </div>
+  </div>
+
+</div>
