@@ -1,26 +1,35 @@
+.main
+    margin-bottom: 144px
+    +sm
+        min-height: 800px
+        margin-bottom: 50px
 .bg-main
     position: absolute
     width: 100%
-    top: 901px
-    padding: 700px 0px
+    height: 250%
+    top: 1445px
     background-color: #1d354e
-    transform: skewY(30deg)
+    transform: skewY(30deg) translateX(-50%)
+    left: 50%
     z-index: -2
     +md
-        padding: 400px 0
-        top: 769px
+        top: 1000px
+        height: 300%
     +sm
-        padding: 200px 0
-        top: 625px
+        top: 600px
+        height: 300%
 .forecast-wrapper
     max-width: 980px
-    transform: skewY(-30deg)
+    // transform: skewY(-30deg)
     +md
-        padding: 0 20px
+        padding: 20px 20px
 
 .forecast-block
+    margin-top: 140px
     font-weight: 400
     color: #ffffff
+    +sm
+        margin-top: 30px
     &__title
         font-size: 60px
         +md
@@ -66,7 +75,7 @@
         color: #ffffff
 
 .graph
-    transform: skewY(-30deg)
+    // transform: skewY(-30deg)
     margin: 0 25px
     display: flex
     justify-content: center
@@ -126,9 +135,3 @@
 
 .value-now__item:first-child
     align-self: center
-
-
-
-
-
-

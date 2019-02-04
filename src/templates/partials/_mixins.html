@@ -55,3 +55,15 @@
 		{% endfor %}
 	</div>
 {% endmacro %}
+
+{% macro subscribe(item) %}
+	<ul class="subscribe-telegram">
+		{% for i in item %}
+			{% if i.list %}
+				{% for i in i.list %}
+					<li class="subscribe-telegram__item"><a href="#" class="subscribe-telegram__link">{{i}}</a></li>
+				{% endfor %}
+			{% endif %}
+		{% endfor %}
+	</ul>
+{% endmacro %}

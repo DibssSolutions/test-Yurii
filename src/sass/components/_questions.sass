@@ -1,0 +1,116 @@
+.inner
+    margin: 0 20px
+    +sm
+        margin: 0px
+.questions-wrapper
+    background-color: #ffffff
+    border-radius: 16px
+    padding: 0 50px
+    margin-bottom: 165px
+    +sm
+        padding: 0 20px
+        margin-bottom: 65px
+
+.questions
+    max-width: 990px
+    background-color: #ffffff
+    border-radius: 16px
+    padding: 80px 0px
+    margin: 0 auto
+    +md
+        max-width: 700px
+        padding: 30px 0
+    &__title
+        font-weight: 200
+        color: #1d354e
+        font-size: 72px
+        line-height: 72px
+        margin-bottom: 65px
+        span
+            font-weight: 600
+        +md
+            font-size: 48px
+            line-height: 48px
+            max-width: 500px
+        +sm
+            font-size: 36px
+            line-height: 36px
+            max-width: 300px
+            margin-bottom: 30px
+
+.questions-block__item
+    padding: 10px 0
+.flex
+    display: flex
+    align-items: flex-start
+    img
+        margin-top: 6px
+        margin-right: 16px
+        +md
+            margin-top: -1px
+.questions-block__title
+    color: #1d354e
+    font-size: 30px
+    font-weight: 600
+    line-height: 48px
+    margin-bottom: 10px
+    +md
+        font-size: 24px
+        line-height: 30px
+    +sm
+        font-size: 18px;
+        line-height: 24px;
+
+
+.questions-block__item input
+    display: none
+.none
+    display: none
+    color: #1d354e
+    font-size: 18px
+    font-weight: 300
+    line-height: 36px
+    margin-bottom: 15px
+    +md
+        font-size: 14px
+        line-height: 22px
+
+#question_one:checked ~ .none
+    display: block
+    margin-left: 53px
+
+#question_two:checked ~ .none
+    display: block
+    margin-left: 53px
+
+#question_three:checked ~ .none
+    display: block
+    margin-left: 53px
+
+#question_four:checked ~ .none
+    display: block
+    margin-left: 53px
+
+#question_five:checked ~ .none
+    display: block
+    margin-left: 53px
+
+#question_one:checked ~ label img
+    transform: rotate(90deg);
+    transition: 0.3s
+
+#question_two:checked ~ label img
+    transform: rotate(90deg);
+    transition: 0.3s
+
+#question_three:checked ~ label img
+    transform: rotate(90deg);
+    transition: 0.3s
+
+#question_four:checked ~ label img
+    transform: rotate(90deg);
+    transition: 0.3s    
+
+#question_five:checked ~ label img
+    transform: rotate(90deg);
+    transition: 0.3s
