@@ -1,7 +1,6 @@
 .robot-wrapper
     max-width: 1170px
     position: relative
-
 .robot__img
     background-image: url(../img/robot.png)
     background-repeat: no-repeat
@@ -23,4 +22,29 @@
         width: 320px
         height: 444px
         top: 188px
+
+.robot:before
+    content: url(../img/box.png)
+    position: absolute
+    left: -265px
+    top: 196px
+    +md
+        left: -50px
+        top: 203px
+    +sm
+        display: none
+
+
+.robot:after
+    content: url(../img/box-header2.png)
+    position: absolute
+    right: -150px
+    top: 340px
+    +md
+        right: -90px
+        top: 250px
+    +sm
+        display: none
+
+
 

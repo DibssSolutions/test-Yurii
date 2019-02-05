@@ -93,37 +93,41 @@
       <div class="main">
         <div class="bg-main"></div>
         <section class="forecast-block forecast-wrapper wrapper">
-          <h2 class="forecast-block__title">Popular forecasts</h2>
-          <p class="forecast-block__desc">The forecasts are updated every 30 minutes</p>
-          <div class="forecast-block__currency">
-            <ul class="value">
-              <li class="value__item"><a href="#" class="value__link">BTC</a></li>
-              <li class="value__item"><a href="#" class="value__link">LTC</a></li>
-              <li class="value__item"><a href="#" class="value__link">ETH</a></li>
-              <li class="value__item"><a href="#" class="value__link">XRP</a></li>
-              <li class="value__item"><a href="#" class="value__link">DASH</a></li>
-              <li class="value__item"><a href="#" class="value__link">XMR</a></li>
-            </ul>
-          </div>
-          <div class="value-now">
-            <div class="value-now__item">
-              <div>XRP/USD</div>
+          <div class="forecast-box">
+            <h2 class="forecast-block__title">Popular forecasts</h2>
+            <p class="forecast-block__desc">The forecasts are updated every 30 minutes</p>
+            <div class="forecast-block__currency">
+              <ul class="value">
+                <li class="value__item"><a href="#" class="value__link">BTC</a></li>
+                <li class="value__item"><a href="#" class="value__link">LTC</a></li>
+                <li class="value__item"><a href="#" class="value__link">ETH</a></li>
+                <li class="value__item"><a href="#" class="value__link">XRP</a></li>
+                <li class="value__item"><a href="#" class="value__link">DASH</a></li>
+                <li class="value__item"><a href="#" class="value__link">XMR</a></li>
+              </ul>
             </div>
-            <div class="value-now__item">
-              <div>now</div>
-              <div>12,500</div>
-            </div>
-            <div class="value-now__item">
-              <div>24 hours</div>
-              <div>12,550</div>
-              <div>317.00 (5.10%)</div>
+            <div class="value-now">
+              <div class="value-now__item">
+                <div>XRP/USD</div>
+              </div>
+              <div class="value-now__item">
+                <div>now</div>
+                <div>12,500</div>
+              </div>
+              <div class="value-now__item">
+                <div>24 hours</div>
+                <div>12,550</div>
+                <div>317.00 (5.10%)</div>
+              </div>
             </div>
           </div>
         </section>
-        <div class="graph">
-          <img class="graph__img_lg" src="img/forecasts.png" alt="forecasts currency">
-          <img class="graph__img_md" src="img/forecast-md.png" alt="forecasts currency">
-          <img class="graph__img_sm" src="img/forecast-sm.png" alt="forecasts currency">
+        <div class="margin-graph">
+          <div class="graph">
+            <img class="graph__img_lg" src="img/forecasts.png" alt="forecasts currency">
+            <img class="graph__img_md" src="img/forecast-md.png" alt="forecasts currency">
+            <img class="graph__img_sm" src="img/forecast-sm.png" alt="forecasts currency">
+          </div>
         </div>
       </div>
       <!-- MAIN end block -->
@@ -171,68 +175,72 @@
       <!-- NEWS block -->
       <section class="news">
         <div class=" news-wrapper wrapper">
-          <h2 class="news__title">Latest News</h2>
-          <div class="news-box">
-            <div class="news-box__item">
-              <div class="box"></div>
-              <h3 class="news-box__title">Абсолютная погрешность</h3>
-              <p class="news-box__desc">Рондо синхронизует динамический эллипсис. Газ специфицирует ролевой соноропериод. Стимулирование коммьюнити, как неоднократно наблюдалось.</p>
+          <div class="n-box">
+            <h2 class="news__title">Latest News</h2>
+            <div class="news-box">
+              <div class="news-box__item">
+                <div class="box"></div>
+                <h3 class="news-box__title">Абсолютная погрешность</h3>
+                <p class="news-box__desc">Рондо синхронизует динамический эллипсис. Газ специфицирует ролевой соноропериод. Стимулирование коммьюнити, как неоднократно наблюдалось.</p>
+              </div>
+              <div class="news-box__item">
+                <div class="box"></div>
+                <h3 class="news-box__title">Производство имитирует эгоцентризм</h3>
+                <p class="news-box__desc">Закон тормозит гидродинамический удар. Контекстная реклама вертикально восстанавливает интеграл по бесконечной области.</p>
+              </div>
+              <div class="news-box__item">
+                <div class="box"></div>
+                <h3 class="news-box__title">Тест полифигурно отражает </h3>
+                <p class="news-box__desc">Визуализация концепии, следовательно, излучает архетип. Не доказано, что струя накладывает девиантный стратегический рыночный план. Интеграл Дирихле отклоняет креативный постулат.</p>
+              </div>
             </div>
-            <div class="news-box__item">
-              <div class="box"></div>
-              <h3 class="news-box__title">Производство имитирует эгоцентризм</h3>
-              <p class="news-box__desc">Закон тормозит гидродинамический удар. Контекстная реклама вертикально восстанавливает интеграл по бесконечной области.</p>
-            </div>
-            <div class="news-box__item">
-              <div class="box"></div>
-              <h3 class="news-box__title">Тест полифигурно отражает </h3>
-              <p class="news-box__desc">Визуализация концепии, следовательно, излучает архетип. Не доказано, что струя накладывает девиантный стратегический рыночный план. Интеграл Дирихле отклоняет креативный постулат.</p>
-            </div>
+            <button class="btn_lg news__btn">Load More</button>
           </div>
-          <button class="btn_lg news__btn">Load More</button>
         </div>
       </section>
       <!-- NEWS end block -->
       <!-- QUESTIONS block -->
       <div class="inner">
         <section class="questions-wrapper wrapper">
-          <div class="questions">
-            <h2 class="questions__title"><span>Frequently Asked</span> Questions</h2>
-            <div class="questions-block">
-              <div class="questions-block__item">
-                <input type="checkbox" name="question" id="question_one">
-                <label class="flex" for="question_one"><img src="../../img/question_btn.png" alt="btn">
-                  <h3 class="questions-block__title">Why the graphic predictions for the 24 hours differs from that of the 48 hour and the weekly?</h3>
-                </label>
-                <p class="none">Since this is an alpha version of the NeuroBot, we use different algorithms to predict the rates of cryptocurrencies for 24 hours, 48 hours and a week. Soon we will implement a unified algorithm for all charts and in the next few updates the graphics will not be different.</p>
-              </div>
-              <div class="questions-block__item">
-                <input type="checkbox" name="question" id="question_two">
-                <label class="flex" for="question_two"><img src="../../img/question_btn.png" alt="btn">
-                  <h3 class="questions-block__title">What is the charts time zone?</h3>
-                </label>
-                <p class="none">Since this is an alpha version of the NeuroBot, we use different algorithms to predict the rates of cryptocurrencies for 24 hours, 48 hours and a week. Soon we will implement a unified algorithm for all charts and in the next few updates the graphics will not be different.</p>
-              </div>
-              <div class="questions-block__item">
-                <input type="checkbox" name="question" id="question_three">
-                <label class="flex" for="question_three"><img src="../../img/question_btn.png" alt="btn">
-                  <h3 class="questions-block__title">How accurate are the forecasts?</h3>
-                </label>
-                <p class="none">Since this is an alpha version of the NeuroBot, we use different algorithms to predict the rates of cryptocurrencies for 24 hours, 48 hours and a week. Soon we will implement a unified algorithm for all charts and in the next few updates the graphics will not be different.</p>
-              </div>
-              <div class="questions-block__item">
-                <input type="checkbox" name="question" id="question_four">
-                <label class="flex" for="question_four"><img src="../../img/question_btn.png" alt="btn">
-                  <h3 class="questions-block__title">Why are the graphics of the forecasts so inconvenient?</h3>
-                </label>
-                <p class="none">Since this is an alpha version of the NeuroBot, we use different algorithms to predict the rates of cryptocurrencies for 24 hours, 48 hours and a week. Soon we will implement a unified algorithm for all charts and in the next few updates the graphics will not be different.</p>
-              </div>
-              <div class="questions-block__item">
-                <input type="checkbox" name="question" id="question_five">
-                <label class="flex" for="question_five"><img src="../../img/question_btn.png" alt="btn">
-                  <h3 class="questions-block__title">What is the most accurate forecast?</h3>
-                </label>
-                <p class="none">Since this is an alpha version of the NeuroBot, we use different algorithms to predict the rates of cryptocurrencies for 24 hours, 48 hours and a week. Soon we will implement a unified algorithm for all charts and in the next few updates the graphics will not be different.</p>
+          <div class="ques-box">
+            <div class="questions">
+              <h2 class="questions__title"><span>Frequently Asked</span> Questions</h2>
+              <div class="questions-block">
+                <div class="questions-block__item">
+                  <input type="checkbox" name="question" id="question_one">
+                  <label class="flex" for="question_one"><img src="../../img/question_btn.png" alt="btn">
+                    <h3 class="questions-block__title">Why the graphic predictions for the 24 hours differs from that of the 48 hour and the weekly?</h3>
+                  </label>
+                  <p class="none">Since this is an alpha version of the NeuroBot, we use different algorithms to predict the rates of cryptocurrencies for 24 hours, 48 hours and a week. Soon we will implement a unified algorithm for all charts and in the next few updates the graphics will not be different.</p>
+                </div>
+                <div class="questions-block__item">
+                  <input type="checkbox" name="question" id="question_two">
+                  <label class="flex" for="question_two"><img src="../../img/question_btn.png" alt="btn">
+                    <h3 class="questions-block__title">What is the charts time zone?</h3>
+                  </label>
+                  <p class="none">Since this is an alpha version of the NeuroBot, we use different algorithms to predict the rates of cryptocurrencies for 24 hours, 48 hours and a week. Soon we will implement a unified algorithm for all charts and in the next few updates the graphics will not be different.</p>
+                </div>
+                <div class="questions-block__item">
+                  <input type="checkbox" name="question" id="question_three">
+                  <label class="flex" for="question_three"><img src="../../img/question_btn.png" alt="btn">
+                    <h3 class="questions-block__title">How accurate are the forecasts?</h3>
+                  </label>
+                  <p class="none">Since this is an alpha version of the NeuroBot, we use different algorithms to predict the rates of cryptocurrencies for 24 hours, 48 hours and a week. Soon we will implement a unified algorithm for all charts and in the next few updates the graphics will not be different.</p>
+                </div>
+                <div class="questions-block__item">
+                  <input type="checkbox" name="question" id="question_four">
+                  <label class="flex" for="question_four"><img src="../../img/question_btn.png" alt="btn">
+                    <h3 class="questions-block__title">Why are the graphics of the forecasts so inconvenient?</h3>
+                  </label>
+                  <p class="none">Since this is an alpha version of the NeuroBot, we use different algorithms to predict the rates of cryptocurrencies for 24 hours, 48 hours and a week. Soon we will implement a unified algorithm for all charts and in the next few updates the graphics will not be different.</p>
+                </div>
+                <div class="questions-block__item">
+                  <input type="checkbox" name="question" id="question_five">
+                  <label class="flex" for="question_five"><img src="../../img/question_btn.png" alt="btn">
+                    <h3 class="questions-block__title">What is the most accurate forecast?</h3>
+                  </label>
+                  <p class="none">Since this is an alpha version of the NeuroBot, we use different algorithms to predict the rates of cryptocurrencies for 24 hours, 48 hours and a week. Soon we will implement a unified algorithm for all charts and in the next few updates the graphics will not be different.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -241,44 +249,46 @@
       <!-- QUESTIONS end block -->
       <div class="ft">
         <footer class="footer-wrapper wrapper">
-          <div class="subscribe">
-            <div class="block-button">
-              <ul class="subscribe-telegram">
-                <li class="subscribe-telegram__item"><a href="#" class="subscribe-telegram__link">Telegram bot</a></li>
-                <li class="subscribe-telegram__item"><a href="#" class="subscribe-telegram__link">Telegram bot</a></li>
-                <li class="subscribe-telegram__item"><a href="#" class="subscribe-telegram__link">Telegram channel</a></li>
+          <div class="footer-box">
+            <div class="subscribe">
+              <div class="block-button">
+                <ul class="subscribe-telegram">
+                  <li class="subscribe-telegram__item"><a href="#" class="subscribe-telegram__link">Telegram bot</a></li>
+                  <li class="subscribe-telegram__item"><a href="#" class="subscribe-telegram__link">Telegram bot</a></li>
+                  <li class="subscribe-telegram__item"><a href="#" class="subscribe-telegram__link">Telegram channel</a></li>
+                </ul>
+                <a class="block-button__link" href="#">support@neurobot.trading</a>
+              </div>
+              <div class="block-email">
+                <h3 class="block-email__title"><span>Subscribe</span> to our news</h3>
+                <form action="#"><input class="block-email__input" type="email" name="email" placeholder="e-mail"></form>
+                <button class="block-email__btn btn_lg">Subscribe</button>
+              </div>
+            </div>
+            <div class="links">
+              <ul class="links__block">
+                <li class="links__item">
+                  <a href="#"><img src="../../img/social icons.png" alt="facebook"></a>
+                </li>
+                <li class="links__item">
+                  <a href="#"><img src="../../img/inst.png" alt="instagram"></a>
+                </li>
+                <li class="links__item">
+                  <a href="#"><img src="../../img/youtube.png" alt="youtube"></a>
+                </li>
+                <li class="links__item">
+                  <a href="#"><img src="../../img/vk.png" alt="vk"></a>
+                </li>
               </ul>
-              <a class="block-button__link" href="#">support@neurobot.trading</a>
-            </div>
-            <div class="block-email">
-              <h3 class="block-email__title"><span>Subscribe</span> to our news</h3>
-              <form action="#"><input class="block-email__input" type="email" name="email" placeholder="e-mail"></form>
-              <button class="block-email__btn btn_lg">Subscribe</button>
-            </div>
-          </div>
-          <div class="links">
-            <ul class="links__block">
-              <li class="links__item">
-                <a href="#"><img src="../../img/social icons.png" alt="facebook"></a>
-              </li>
-              <li class="links__item">
-                <a href="#"><img src="../../img/inst.png" alt="instagram"></a>
-              </li>
-              <li class="links__item">
-                <a href="#"><img src="../../img/youtube.png" alt="youtube"></a>
-              </li>
-              <li class="links__item">
-                <a href="#"><img src="../../img/vk.png" alt="vk"></a>
-              </li>
-            </ul>
-            <div class="copy">
-              <a class="copy__link" href="#">Cookies</a>
-              <a class="copy__link" href="#">Privacy Policy</a>
+              <div class="copy">
+                <a class="copy__link" href="#">Cookies</a>
+                <a class="copy__link" href="#">Privacy Policy</a>
+              </div>
             </div>
           </div>
         </footer>
-        <div class="bg-footer"></div>
       </div>
+      <div class="bg-footer"></div>
     </div>
     <!-- BEGIN scripts -->
     <script type="text/javascript" src="js/app.js"></script>

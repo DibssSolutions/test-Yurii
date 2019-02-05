@@ -1,6 +1,8 @@
 .footer-wrapper
     max-width: 990px
-
+    position: relative
+    +sm
+        margin: 0 10px
 .subscribe
     display: flex
     justify-content: space-between
@@ -46,7 +48,7 @@
     border-radius: 8px
     border: 16px solid #56ecf6
     +md
-        padding: 50px 30px
+        padding: 50px 18px
         border: 12px solid #56ecf6
     +sm
         margin-bottom: 55px
@@ -111,6 +113,7 @@
 .links__block
     display: flex
     +sm
+        margin: 0 10px
         margin-bottom: 15px
 
 .links__item
@@ -137,12 +140,26 @@
     left: -30px;
     z-index: -2;
     +sm
-        left: 160px
+        left: 140px
+        top: 99%
 
 .ft
     position: relative
-    overflow: hidden
+    // overflow: hidden
     +md
         padding: 0 20px
     +sm
         padding: 0px
+    
+.footer-box:before
+    content: url(../img/footer-box.png)
+    position: absolute
+    left: -328px
+    top: 138px
+    +md
+        left: 220px
+        top: 495px
+    +sm
+        left: 279px
+        top: 85%
+

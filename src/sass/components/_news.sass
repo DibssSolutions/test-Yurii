@@ -2,6 +2,7 @@
     max-width: 990px
     min-width: 0px;
     margin-bottom: 110px
+    position: relative
 
 .news
     margin: 0 20px
@@ -73,3 +74,15 @@
         height: 216px
     +sm
         width: 100%
+
+
+.n-box:before
+    content: url(../img/news-box.png)
+    position: absolute
+    left: 90%
+    top: 115px
+    +xl
+        left: 90%
+        top: 165px
+    +sm
+        display: none
