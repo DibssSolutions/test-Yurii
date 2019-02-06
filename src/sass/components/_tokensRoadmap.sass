@@ -1,0 +1,128 @@
+main
+    margin: 0 10px
+.roadmap-wrapper
+    max-width: 980px
+    margin: 0 auto
+
+.bg-roadmap
+    height: 2730px
+    +sm
+        height: 2000px
+
+.bg-roadmap:before
+    content: url(../img/roadmap.png)
+    position: absolute
+    z-index: -1
+    left: 50%
+    transform: translateX(-25%)
+    +sm
+        content: url(../img/Roadmap-mobile.png)
+        position: absolute
+        z-index: 0
+        left: 50%
+        transform: translateX(-42%)
+
+.benefits__title
+    max-width: 374px
+    color: #fefeff
+    font-size: 72px
+    line-height: 60px
+    letter-spacing: 3.6px
+    padding-top: 90px
+    +md
+        font-size: 56px
+        line-height: 45px
+    +sm
+        font-size: 36px
+        line-height: 36px
+        letter-spacing: 2.4px
+        max-width: 280px
+        padding: 0
+    span
+        font-size: 48px
+        letter-spacing: 2px
+        +md
+            font-size: 36px
+        +sm
+            font-size: 30px
+
+
+.benefits-block
+    display: flex
+    flex-direction: column
+    // margin-top: 155px
+    +md
+        // margin-top: 200px
+    +sm
+        margin-top: 240px
+    &__subtitle
+        color: #fefeff
+        font-size: 36px
+        font-weight: 600
+        line-height: 40px
+        +md
+            font-size: 27px
+            line-height: 30px
+    &__text
+        color: #fefeff
+        font-size: 18px
+        font-weight: 300
+        line-height: 36px
+        +md
+            font-size: 14px
+            line-height: 22px
+    &__ico
+        margin: -110px 22px 0 0
+        +md
+            margin: -50px 22px 0 0
+        +sm
+            display: none
+
+
+.benefits-block__item
+    display: flex
+    width: 50%
+    // margin-bottom: 175px
+    +md
+        // margin-bottom: 230px
+    +sm
+        // margin-bottom: 70px
+
+.benefits-block__item:nth-child(odd)
+    align-self: flex-end
+    max-width: 450px
+    min-height: 390px
+    align-items: center
+    +md
+        max-width: 355px
+        min-height: 389px
+    +sm
+        min-width: 220px
+        min-height: 185px
+        align-items: center
+
+.benefits-block__item:nth-child(even)
+    align-self: flex-start
+    max-width: 450px
+    min-height: 450px
+    align-items: center
+    +md
+        max-width: 340px
+        min-height: 391px
+    +sm
+        min-width: 220px
+        min-height: 185px
+        align-items: center
++sm
+    .benefits-block__item:nth-child(2)
+        align-self: flex-end
+        margin-bottom: 175px
+    .benefits-block__item:nth-child(3)
+        align-self: flex-start
+    .benefits-block__item:nth-child(4)
+         margin-bottom: 175px
+    .benefits-block__item:nth-child(6)
+        align-self: flex-end
+
+
+

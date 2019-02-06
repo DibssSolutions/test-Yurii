@@ -16,9 +16,23 @@
     </label>
     <div class="header-wrapper">
       <nav class="header-nav">
-        {{ mixins.menu([
+        {#{{ mixins.menu([
         {list: ['Forecasts', 'Tokens', 'About', 'Log In']}
-        ]) }}
+        ]) }} #}
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="page.html">Forecasts</a>
+          </li>
+          <li class="menu__item">
+            <a href="tokens.html" class="tokens-link">Tokens</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">About</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Log In</a>
+          </li>
+        </ul>
       </nav>
       <div class="header-right">
         <button class="btn">Sign Up</button>

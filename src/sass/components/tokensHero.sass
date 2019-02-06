@@ -1,0 +1,144 @@
+.tokensHero-wrapper
+    padding: 0 30px
+    +sm
+        padding: 0 5px
+.tokensHero
+    padding: 65px 95px 75px 75px
+    background-color: #ffffff
+    box-shadow: 0 24px 72px rgba(29, 53, 78, 0.25)
+    border-radius: 16px
+    position: relative
+    margin-bottom: 90px
+    +sm
+        margin-top: 25px
+    +md
+        padding: 36px 48px 48px 36px
+    +sm
+        padding: 26px 22px 35px 22px
+    &__title
+        color: #1d354e
+        font-size: 72px
+        font-weight: 600
+        +md
+            font-size: 48px
+        +sm
+            font-size: 36px
+    &__desc
+        color: #1d354e
+        font-size: 18px
+        font-weight: 300
+        line-height: 36px
+        padding: 25px 0
+        +md
+            font-size: 14px
+            line-height: 22px
+            padding: 15px 0
+        +sm
+            padding-bottom: 25px
+
+    &__subtitle
+        color: #1d354e
+        font-size: 36px
+        font-weight: 600
+        +sm
+            font-size: 22px
+
+.tokensHero__desc:nth-child(3)
+    +sm
+        display: none
+
+.tokensHero-form
+    border-radius: 8px
+    border: 8px solid #56ecf6
+    margin: 45px 0
+    position: relative
+
+    +md
+        margin: 35px 0
+    +sm
+        margin: 25px 0
+    &__text
+        background-color: #ffffff
+        width: 100% 
+        color: #1d354e
+        font-size: 24px
+        font-weight: 700
+        padding: 26px 154px 26px 35px
+        display: block
+        text-overflow: ellipsis
+        width: 100%
+        overflow: hidden
+        +md
+            font-size: 18px
+            padding: 24px 100px 24px 25px
+        +sm
+            padding: 15px 75px 15px 15px
+
+
+.tokensHero-form:after
+    content: url(../img/form-img.png)
+    position: absolute
+    background-color: #56ecf6
+    top: 50%
+    transform: translateY(-50%)
+    right: -2px
+    padding: 30px 30px 30px 32px
+    cursor: pointer
+    border-radius: 0 8px 8px 0
+    +md
+        padding: 20px 22px 20px 24px
+    +sm
+        padding: 15px 18px 15px 20px
+
+.tokensHero__btn
+    padding: 22px 133px
+    margin-right: 48px
+    +md
+        margin-right: 26px
+        padding: 21px 95px
+    +sm
+        display: block
+        margin: 0 auto
+        // padding: 15px 0px
+        padding: 21px 95px
+        margin-bottom: 16px
+    +ms
+        width: 100%
+        padding: 15px
+
+.tokensHero__btn:last-child
+    padding: 19px 118px
+    background-color: #ffffff
+    color: #1d354e
+    border-radius: 32px
+    border: 3px solid #1d354e
+    margin-right: 0
+    +md
+        padding: 18px 80px
+    +sm
+        margin: 0 auto
+    +ms
+        padding: 12px
+
+.tokensHero:before
+    content: url(../img/box-tokens.png)
+    position: absolute
+    right: 26%
+    top: -5%
+    +md
+        right: -8%
+        top: 3%
+    +sm
+        display: none
+
+.tokensHero:after
+    content: url(../img/box-header2.png)
+    position: absolute
+    right: -18%
+    top: 40%
+    transform: translateY(-50%)
+    +md
+        right: -21%
+        top: 115%
+    +sm
+        display: none
