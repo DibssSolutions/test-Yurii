@@ -1,20 +1,16 @@
-<div class="ft">
-  <footer class="footer-wrapper wrapper">
-    <div class="footer-box">
-      <div class="subscribe">
-        <div class="block-button">
-          {{ mixins.subscribe([
-          {list: ['Telegram bot', 'Telegram bot', 'Telegram channel']}
-          ]) }}
-          <a class="block-button__link" href="#">support@neurobot.trading</a>
-        </div>
-        <div class="block-email">
-          <h3 class="block-email__title"><span>Subscribe</span> to our news</h3>
-          <form action="#"><input class="block-email__input" type="email" name="email" placeholder="e-mail"></form>
-          <button class="block-email__btn btn_lg">Subscribe</button>
-        </div>
+<footer class="footer-wrapper wrapper">
+    <div class="subscribe">
+      <div class="block-button">
+        {{ mixins.subscribe([
+        {list: ['Telegram bot', 'Telegram bot', 'Telegram channel']}
+        ]) }}
+        <a class="block-button__link" href="#">support@neurobot.trading</a>
+      </div>
+      <div class="block-email">
+        <h3 class="block-email__title"><span>Subscribe</span> to our news</h3>
+        <form class="form" action="#">
+         <div class="email-form"><input class="email-form__input" type="email" name="email" placeholder="e-mail"></div></form>
+        <button class="block-email__btn btn_lg btn_dark-blue transition">Subscribe</button>
       </div>
     </div>
-  </footer>
-  <div class="bg-footer"></div>
-</div>
+</footer>

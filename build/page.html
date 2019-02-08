@@ -16,14 +16,14 @@
     <div class="out">
       <!-- HEADER content -->
       <header class="header">
-        <div class="header__inner wrapper">
-          <div class="logo">
-            <img src="img/logo.png" alt="logo" class="logo__img">
+        <div class="header__wrapper wrapper">
+          <a href="#" class="logo">
+            <div class="logo__img"><img src="img/logo.svg" alt="logo"></div>
             <div class="logo__text">
-              <p>Neurobot<span>.trading</span></p>
-              <p> Neural network forecasting</p>
+              <p>Neurobot<span class="trading_blue">.trading</span></p>
+              <p class="logo__text-bottom"> Neural network forecasting</p>
             </div>
-          </div>
+          </a>
           <input type="checkbox" id="burger-menu" class="hidden-menu">
           <label class="btn-menu" for="burger-menu">
             <span class="first"></span>
@@ -48,7 +48,7 @@
               </ul>
             </nav>
             <div class="header-right">
-              <button class="btn">Sign Up</button>
+              <button class="btn btn_white">Sign Up</button>
               <div class="lang">
                 <button class="lang-btn lang__current">Eng</button>
                 <ul class="lang-list">
@@ -74,7 +74,7 @@
             <p>of Cryptocurrencies </p>
             <p>by Neural Network Algorithm</p>
           </h2>
-          <button class="btn_lg">Join Free For 3 Days</button>
+          <button class="btn_lg btn_dark-blue transition">Join Free For 3 Days</button>
         </div>
       </div>
       <!--HEADER VIDEO block -->
@@ -131,10 +131,10 @@
       <!-- MAIN end block -->
       <!-- HOW IT WORKS block -->
       <div class="block">
-        <section class="features-wrapper wrapper">
+        <section class="white_wrapper wrapper">
           <div class="features">
-            <h2 class="features__title">How it works?</h2>
             <div class="features__content">
+              <h2 class="features__title">How it works?</h2>
               <div class="about-features">
                 <div class="about-features-left">
                   <div class="about-features__item">
@@ -177,29 +177,31 @@
             <h2 class="news__title">Latest News</h2>
             <div class="news-box">
               <div class="news-box__item">
-                <div class="box"></div>
+                <div class="box"><img src="./img/coub.png" alt="box"></div>
                 <h3 class="news-box__title">Абсолютная погрешность</h3>
                 <p class="news-box__desc">Рондо синхронизует динамический эллипсис. Газ специфицирует ролевой соноропериод. Стимулирование коммьюнити, как неоднократно наблюдалось.</p>
               </div>
               <div class="news-box__item">
-                <div class="box"></div>
+                <div class="box"><img src="./img/coub.png" alt="box"></div>
                 <h3 class="news-box__title">Производство имитирует эгоцентризм</h3>
                 <p class="news-box__desc">Закон тормозит гидродинамический удар. Контекстная реклама вертикально восстанавливает интеграл по бесконечной области.</p>
               </div>
               <div class="news-box__item">
-                <div class="box"></div>
+                <div class="box"><img src="./img/coub.png" alt="box"></div>
                 <h3 class="news-box__title">Тест полифигурно отражает </h3>
                 <p class="news-box__desc">Визуализация концепии, следовательно, излучает архетип. Не доказано, что струя накладывает девиантный стратегический рыночный план. Интеграл Дирихле отклоняет креативный постулат.</p>
               </div>
             </div>
-            <button class="btn_lg news__btn">Load More</button>
+            <div class="button-news">
+              <button class="btn_lg btn_dark-blue transition">Load More</button>
+            </div>
           </div>
         </div>
       </section>
       <!-- NEWS end block -->
       <!-- QUESTIONS block -->
       <div class="inner">
-        <section class="questions-wrapper wrapper">
+        <section class="white_wrapper wrapper">
           <div class="ques-box">
             <div class="questions">
               <h2 class="questions__title"><span>Frequently Asked</span> Questions</h2>
@@ -245,55 +247,50 @@
         </section>
       </div>
       <!-- QUESTIONS end block -->
-      <div class="ft">
-        <footer class="footer-wrapper wrapper">
-          <div class="footer-box">
-            <div class="subscribe">
-              <div class="block-button">
-                <ul class="subscribe-telegram">
-                  <li class="subscribe-telegram__item"><a href="#" class="subscribe-telegram__link">Telegram bot</a></li>
-                  <li class="subscribe-telegram__item"><a href="#" class="subscribe-telegram__link">Telegram bot</a></li>
-                  <li class="subscribe-telegram__item"><a href="#" class="subscribe-telegram__link">Telegram channel</a></li>
-                </ul>
-                <a class="block-button__link" href="#">support@neurobot.trading</a>
-              </div>
-              <div class="block-email">
-                <h3 class="block-email__title"><span>Subscribe</span> to our news</h3>
-                <form action="#"><input class="block-email__input" type="email" name="email" placeholder="e-mail"></form>
-                <button class="block-email__btn btn_lg">Subscribe</button>
-              </div>
+      <footer class="footer-wrapper wrapper">
+        <div class="subscribe">
+          <div class="block-button">
+            <div class="subscribe-telegram">
+              <a href="#" class="subscribe-telegram__item transition btn_xl btn_white">Telegram bot</a>
+              <a href="#" class="subscribe-telegram__item transition btn_xl btn_white">Telegram bot</a>
+              <a href="#" class="subscribe-telegram__item transition btn_xl btn_white">Telegram channel</a>
+            </div>
+            <a class="block-button__link" href="#">support@neurobot.trading</a>
+          </div>
+          <div class="block-email">
+            <h3 class="block-email__title"><span>Subscribe</span> to our news</h3>
+            <form class="form" action="#">
+              <div class="email-form"><input class="email-form__input" type="email" name="email" placeholder="e-mail"></div>
+            </form>
+            <button class="block-email__btn btn_lg btn_dark-blue transition">Subscribe</button>
+          </div>
+        </div>
+      </footer>
+      <footer class="footer-wrapper wrapper">
+        <div class="footer-box">
+          <div class="links">
+            <ul class="links__block">
+              <li class="links__item">
+                <a href="#"><img src="../../img/social icons.png" alt="facebook"></a>
+              </li>
+              <li class="links__item">
+                <a href="#"><img src="../../img/inst.png" alt="instagram"></a>
+              </li>
+              <li class="links__item">
+                <a href="#"><img src="../../img/youtube.png" alt="youtube"></a>
+              </li>
+              <li class="links__item">
+                <a href="#"><img src="../../img/vk.png" alt="vk"></a>
+              </li>
+            </ul>
+            <div class="copy">
+              <a class="copy__link" href="#">Cookies</a>
+              <a class="copy__link" href="#">Privacy Policy</a>
             </div>
           </div>
-        </footer>
-        <div class="bg-footer"></div>
-      </div>
-      <div class="ft">
-        <footer class="footer-wrapper wrapper">
-          <div class="footer-box">
-            <div class="links">
-              <ul class="links__block">
-                <li class="links__item">
-                  <a href="#"><img src="../../img/social icons.png" alt="facebook"></a>
-                </li>
-                <li class="links__item">
-                  <a href="#"><img src="../../img/inst.png" alt="instagram"></a>
-                </li>
-                <li class="links__item">
-                  <a href="#"><img src="../../img/youtube.png" alt="youtube"></a>
-                </li>
-                <li class="links__item">
-                  <a href="#"><img src="../../img/vk.png" alt="vk"></a>
-                </li>
-              </ul>
-              <div class="copy">
-                <a class="copy__link" href="#">Cookies</a>
-                <a class="copy__link" href="#">Privacy Policy</a>
-              </div>
-            </div>
-          </div>
-        </footer>
-        <div class="bg-footer"></div>
-      </div>
+        </div>
+      </footer>
+      <div class="bg-footer"></div>
     </div>
     <!-- BEGIN scripts -->
     <script type="text/javascript" src="js/app.js"></script>

@@ -16,14 +16,14 @@
     <div class="out">
       <!-- HEADER content -->
       <header class="header">
-        <div class="header__inner wrapper">
-          <div class="logo">
-            <img src="img/logo.png" alt="logo" class="logo__img">
+        <div class="header__wrapper wrapper">
+          <a href="#" class="logo">
+            <div class="logo__img"><img src="img/logo.svg" alt="logo"></div>
             <div class="logo__text">
-              <p>Neurobot<span>.trading</span></p>
-              <p> Neural network forecasting</p>
+              <p>Neurobot<span class="trading_blue">.trading</span></p>
+              <p class="logo__text-bottom"> Neural network forecasting</p>
             </div>
-          </div>
+          </a>
           <input type="checkbox" id="burger-menu" class="hidden-menu">
           <label class="btn-menu" for="burger-menu">
             <span class="first"></span>
@@ -48,7 +48,7 @@
               </ul>
             </nav>
             <div class="header-right">
-              <button class="btn">Sign Up</button>
+              <button class="btn btn_white">Sign Up</button>
               <div class="lang">
                 <button class="lang-btn lang__current">Eng</button>
                 <ul class="lang-list">
@@ -82,47 +82,80 @@
             <h2 class="benefits__title">Roadmap <span>2017-2018</span></h2>
             <div class="benefits-block">
               <div class="benefits-block__item">
-                <div class="benefits-block__ico"><img src="../../img/elliot.svg" alt="elliot teory"></div>
-                <div class="benefits-block__desc">
-                  <h3 class="benefits-block__subtitle">Elliott wave theory</h3>
-                  <p class="benefits-block__text">The algorithm will take into account the Elliott wave in the forecast. Adding new currencies. General improvement of the algorithm.</p>
+                <div class="help">
+                  <div class="benefits-block__ico">
+                    <img src="../../img/elliot.svg" alt="elliot teory" />
+                  </div>
+                  <div class="benefits-block__desc">
+                    <h3 class="benefits-block__subtitle">Elliott wave theory</h3>
+                    <p class="benefits-block__text"> The algorithm will take into account the Elliott wave in the forecast. Adding new currencies. General improvement of the algorithm. </p>
+                  </div>
                 </div>
               </div>
               <div class="benefits-block__item">
-                <div class="benefits-block__ico"><img src="../../img/basic.svg" alt="Basic analysis"></div>
-                <div class="benefits-block__desc">
-                  <h3 class="benefits-block__subtitle">Basic analysis of news</h3>
-                  <p class="benefits-block__text">Accounting for news in the forecast of neurobot. Basic analysis of market sentiment.</p>
+                <div class="lem">
+                  <div>
+                    <p>01</p>
+                    <p>18</p>
+                  </div>
+                </div>
+                <div class="help">
+                  <div class="benefits-block__ico">
+                    <img src="../../img/basic.svg" alt="Basic analysis" />
+                  </div>
+                  <div class="benefits-block__desc">
+                    <h3 class="benefits-block__subtitle">Basic analysis of news</h3>
+                    <p class="benefits-block__text"> Accounting for news in the forecast of neurobot. Basic analysis of market sentiment. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="roadmap-img-two"></div>
+              <div class="benefits-block__item">
+                <div class="help">
+                  <div class="benefits-block__ico">
+                    <img src="../../img/api.svg" alt="API" />
+                  </div>
+                  <div class="benefits-block__desc">
+                    <h3 class="benefits-block__subtitle">API for trading systems</h3>
+                    <p class="benefits-block__text"> The launch of a beta api for developing trading robots on the platform Neurobot. </p>
+                  </div>
                 </div>
               </div>
               <div class="benefits-block__item">
-                <div class="benefits-block__ico"><img src="../../img/api.svg" alt="API"></div>
-                <div class="benefits-block__desc">
-                  <h3 class="benefits-block__subtitle">API for trading systems</h3>
-                  <p class="benefits-block__text">The launch of a beta api for developing trading robots on the platform Neurobot.</p>
+                <div class="help">
+                  <div class="benefits-block__ico">
+                    <img src="../../img/improved.svg" alt="impoved" />
+                  </div>
+                  <div class="benefits-block__desc">
+                    <h3 class="benefits-block__subtitle">Improved news analysis</h3>
+                    <p class="benefits-block__text"> Grouping news into semantic chains according to the positive and negative scenarios. This will enable neurobot to predict the emerging of news critical to the market. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="roadmap-img-three"></div>
+              <div class="benefits-block__item">
+                <div class="help">
+                  <div class="benefits-block__ico">
+                    <img src="../../img/adding.svg" alt="adding" />
+                  </div>
+                  <div class="benefits-block__desc">
+                    <h3 class="benefits-block__subtitle"> Adding new trading instruments </h3>
+                    <p class="benefits-block__text"> Forecasting tokens. The overall improvement in accuracy of the algorithm. </p>
+                  </div>
                 </div>
               </div>
               <div class="benefits-block__item">
-                <div class="benefits-block__ico"><img src="../../img/improved.svg" alt="impoved"></div>
-                <div class="benefits-block__desc">
-                  <h3 class="benefits-block__subtitle">Improved news analysis</h3>
-                  <p class="benefits-block__text">Grouping news into semantic chains according to the positive and negative scenarios. This will enable neurobot to predict the emerging of news critical to the market.</p>
+                <div class="help">
+                  <div class="benefits-block__ico">
+                    <img src="../../img/release.svg" alt="release" />
+                  </div>
+                  <div class="benefits-block__desc">
+                    <h3 class="benefits-block__subtitle"> The release version of Neurobot </h3>
+                    <p class="benefits-block__text"> Run the release version API for developing trading robots. </p>
+                  </div>
                 </div>
               </div>
-              <div class="benefits-block__item">
-                <div class="benefits-block__ico"><img src="../../img/adding.svg" alt="adding"></div>
-                <div class="benefits-block__desc">
-                  <h3 class="benefits-block__subtitle">Adding new trading instruments</h3>
-                  <p class="benefits-block__text">Forecasting tokens. The overall improvement in accuracy of the algorithm.</p>
-                </div>
-              </div>
-              <div class="benefits-block__item">
-                <div class="benefits-block__ico"><img src="../../img/release.svg" alt="release"></div>
-                <div class="benefits-block__desc">
-                  <h3 class="benefits-block__subtitle">The release version of Neurobot</h3>
-                  <p class="benefits-block__text">Run the release version API for developing trading robots.</p>
-                </div>
-              </div>
+              <div class="roadmap-img-four"></div>
             </div>
           </div>
         </div>
@@ -146,6 +179,31 @@
           </div>
         </div>
       </div>
+      <footer class="footer-wrapper wrapper">
+        <div class="footer-box">
+          <div class="links">
+            <ul class="links__block">
+              <li class="links__item">
+                <a href="#"><img src="../../img/social icons.png" alt="facebook"></a>
+              </li>
+              <li class="links__item">
+                <a href="#"><img src="../../img/inst.png" alt="instagram"></a>
+              </li>
+              <li class="links__item">
+                <a href="#"><img src="../../img/youtube.png" alt="youtube"></a>
+              </li>
+              <li class="links__item">
+                <a href="#"><img src="../../img/vk.png" alt="vk"></a>
+              </li>
+            </ul>
+            <div class="copy">
+              <a class="copy__link" href="#">Cookies</a>
+              <a class="copy__link" href="#">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="bg-footer"></div>
     </div>
     <!-- BEGIN scripts -->
     <script type="text/javascript" src="js/app.js"></script>

@@ -1,5 +1,5 @@
 .header
-	&__inner
+	&__wrapper
 		max-width: 990px
 		display: flex
 		align-items: center
@@ -16,6 +16,7 @@
 
 .header-wrapper
 	padding: 66px 0
+	padding-left: 15px
 	display: flex
 	align-items: center
 	width: 100%	
@@ -25,34 +26,35 @@
 		padding: 0px
 .logo
 	display: flex
+	align-items: center
+	text-decoration: none
 	+sm
 
-
-	&__img
+	&__img img
 		width: 43px
 		height: 44px
+		display: block
 		+md
 			width: 33px
 			height: 34px
 	&__text
+		color: $white
+		font-weight: 600
+		font-size: 24px
 		margin-left: 12px
-		
-		p
-			color: $white
-			font-weight: 600
-			font-size: 24px
-			+md
-				font-size: 18px	
-		span
-			color: #56ecf6
-		p:nth-child(2)
-			font-size: 13px
-			font-weight: 400
-			line-height: 3px
-			+md
-				font-size: 10px
+		+md
+			font-size: 18px	
+.logo__text-bottom
+	font-size: 13px
+	font-weight: 400
+	+md
+		font-size: 10px
 .logo__text p
 	font-weight: 600
+	line-height: 1
+
+.trading_blue
+	color: #56ecf6
 
 .header-right
 	display: flex
@@ -76,6 +78,8 @@
 		font-size: 12px
 		padding: 6px 18px	
 
+.btn_white:hover
+	background-color: #d2f5ff
 .lang
 	position: relative
 	color: #1d354e

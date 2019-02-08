@@ -57,13 +57,13 @@
 {% endmacro %}
 
 {% macro subscribe(item) %}
-	<ul class="subscribe-telegram">
+	<div class="subscribe-telegram">
 		{% for i in item %}
 			{% if i.list %}
 				{% for i in i.list %}
-					<li class="subscribe-telegram__item"><a href="#" class="subscribe-telegram__link">{{i}}</a></li>
+					<a href="#" class="subscribe-telegram__item transition btn_xl btn_white">{{i}}</a>
 				{% endfor %}
 			{% endif %}
 		{% endfor %}
-	</ul>
+	</div>
 {% endmacro %}

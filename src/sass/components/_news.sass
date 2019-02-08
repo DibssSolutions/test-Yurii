@@ -3,6 +3,8 @@
     min-width: 0px;
     margin-bottom: 110px
     position: relative
+    +sm
+        margin-bottom: 60px
 
 .news
     margin: 0 20px
@@ -21,13 +23,10 @@
         +sm
             font-size: 36px
             margin-top: 64px
-    &__btn
-        padding: 21px 114px
-        display: flex
-        margin: 0 auto
-        +md
-            border-radius: 24px
-            padding: 13px 62px
+
+.button-news
+    text-align: center
+
 .news-box
     display: flex
     justify-content: space-between
@@ -40,6 +39,7 @@
         
     &__item
         width: 300px
+        padding: 0 25px
         +md
             width: 216px
         +sm
@@ -63,18 +63,13 @@
             font-size: 14px
             line-height: 22px
 
-.box
-    width: 300px
-    height: 300px
+.box img
+    max-width: 100%
+    height: auto
     margin: auto
-    border-radius: 8px
-    background-color: #222222
-    +md
-        width: 216px
-        height: 216px
+    display: block
     +sm
         width: 100%
-
 
 .n-box:before
     content: url(../img/news-box.png)

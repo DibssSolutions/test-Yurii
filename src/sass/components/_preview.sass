@@ -22,25 +22,48 @@
     &__title
         font-size: 72px
         font-weight: 600
+        line-height: 84px
         +md
             font-size: 40px
+            line-height: 53px
         +sm
             font-size: 36px
+            line-height: 47px
+
     &__subtitle
         font-size: 30px
         font-weight: 600
         margin-bottom: 25px
+        line-height: 58px
         +md
             font-size: 18px
+            line-height: 32px
+        +sm
+            line-height: 28px
 
 .btn_lg
+    text-align: center
     border-radius: 32px
     background-color: #1d354e
+    border: 3px solid #1d354e
     color: #fefeff
     font-size: 18px
     font-weight: 600
-    padding: 21px 71px
-    +sm
+    padding: 18px 0px
+    box-sizing: border-box
+    min-width: 320px
+    +md
+        min-width: 260px 
         font-size: 16px
-        padding: 15px 52px
+        padding: 15px 0px
+    +sm
+        min-width: 216px
 
+.btn_dark-blue:hover
+    background-color: white
+    color: #1d354e
+    box-sizing: border-box
+    border: 3px solid #1d354e
+
+.transition
+    transition: 0.4s

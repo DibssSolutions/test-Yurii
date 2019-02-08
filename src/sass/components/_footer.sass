@@ -1,6 +1,8 @@
 .footer-wrapper
     max-width: 990px
     position: relative
+    +md
+        margin: 0 20px
     +sm
         margin: 0 10px
 .subscribe
@@ -12,20 +14,28 @@
         flex-direction: column-reverse
 
 .subscribe-telegram__item
-    padding: 19px 102px
+    display: block
+    font-size: 18px
+    font-weight: 600
+    text-decoration: none
+    padding: 19px 0px
     background-color: #ffffff
     border-radius: 32px
     text-align: center
+    color: #1d354e
     margin-bottom: 24px
     +md
         padding: 18px 37px
 
-.subscribe-telegram__link
-    color: #1d354e;
-    font-size: 18px;
-    font-weight: 600;
-    text-decoration: none
+.btn_xl
+    width: 370px
+    +sm
+        max-width: 290px
 
+.btn_white:hover
+    background-color: #1d354e
+    color: #ffffff
+    transition: 0.4s
 .subscribe-telegram__link:before
     content: url(../img/telegram.svg)
     position: relative
@@ -34,7 +44,7 @@
 
 .block-button
     +sm
-        margin-bottom: 150px
+        margin-bottom: 50px
 .block-button__link
     font-size: 18px
     color: #ffffff
@@ -72,7 +82,7 @@
         line-height: 36px
         max-width: 220px
     
-.block-email__input
+.email-form__input
     background: 0
     width: 370px
     height: 40px
@@ -86,7 +96,7 @@
     +md
         max-width: 280px
     +sm
-        max-width: 240px
+        max-width: 230px
 
 ::-webkit-input-placeholder
     color: #ffffff
@@ -100,66 +110,5 @@
     display: flex
     justify-content: center
     +md
-        padding: 21px 96px
+        padding: 21px 0px
         margin: 0 auto
-
-.links
-    display: flex
-    justify-content: space-between
-    margin-bottom: 80px
-    +sm
-        flex-direction: column
-        margin-bottom: 5px
-.links__block
-    display: flex
-    +sm
-        margin: 0 10px
-        margin-bottom: 15px
-
-.links__item
-    margin-right: 12px
-
-.copy__link
-    color: #ffffff
-    font-size: 18px
-    font-weight: 600
-    text-decoration: none
-    margin-right: 40px
-    +sm
-        font-size: 16px
-
-.copy__link:last-child
-    margin: 0
-
-.bg-footer
-    position: absolute;
-    width: 100%;
-    height: 250%;
-    background-color: #1d354e;
-    transform: skewY(30deg) translateX(-50%);
-    left: -30px;
-    z-index: -2;
-    +sm
-        left: 140px
-        top: 99%
-
-.ft
-    position: relative
-    // overflow: hidden
-    +md
-        padding: 0 20px
-    +sm
-        padding: 0px
-    
-.footer-box:before
-    content: url(../img/footer-box.png)
-    position: absolute
-    left: -328px
-    top: 138px
-    +md
-        left: 220px
-        top: 495px
-    +sm
-        left: 279px
-        top: 85%
-
