@@ -46,12 +46,13 @@
         +sm
             font-size: 14px
 
-.forecast-block__currency
+.forecast-currency
     padding: 50px 0
+    +sm
+    padding: 15px 0
 
 .value
     display: flex
-    justify-content: space-between
     flex-wrap: wrap
     font-weight: 700
     box-sizing: border-box
@@ -59,24 +60,31 @@
         font-size: 30px
         border: 8px solid #223e5c
         border-radius: 8px
-        padding: 13px 29px
+        padding: 13px 0
         cursor: pointer
+        margin-right: 30px
+        text-align: center
+        width: 136px
         +md
             font-size: 18px
             border: 6px solid #223e5c
+            width: 102px
+            margin-right: 22px
         +sm
-            width: 30%
+            width: 90px
             text-align: center
-            padding: 15px 0px
+            padding: 7px 0px
             margin-bottom: 10px
             font-size: 16px
+            margin-right: 10px
     &__item:hover
         background-color: #00bdca
         border-color: #00bdca
     &__link
         text-decoration: none
         color: #ffffff
-
+    &__item:last-child
+        margin-right: 0
 .graph
     // transform: skewY(-30deg)
     margin: 0 auto

@@ -47,12 +47,11 @@
     +sm
         display: none
 
-.tokensHero-form
+.hero-form-value
     border-radius: 8px
     border: 8px solid #56ecf6
     margin: 45px 0
     position: relative
-
     +md
         margin: 35px 0
     +sm
@@ -74,51 +73,62 @@
         +sm
             padding: 15px 75px 15px 15px
 
+.hero-form
+    position: relative
 
-.tokensHero-form:after
-    content: url(../img/form-img.png)
+.hero-form-copy__item
     position: absolute
     background-color: #56ecf6
     top: 50%
     transform: translateY(-50%)
-    right: -2px
-    padding: 30px 30px 30px 32px
+    right: 0px
+    width: 96px
+    height: 96px
     cursor: pointer
     border-radius: 0 8px 8px 0
     +md
-        padding: 20px 22px 20px 24px
+        width: 72px
+        height: 72px
     +sm
-        padding: 15px 18px 15px 20px
+        width: 60px
+        height: 60px
 
-.tokensHero__btn
-    padding: 22px 133px
-    margin-right: 48px
+.hero-form-copy__img
+    display: block
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    position: absolute
+
+.hero-link
+    display: flex
+    +sm
+        flex-direction: column
+        align-items: center
+.hero-link__item
+    display: block
+    text-decoration: none
+    width: 370px
+    margin-right: 26px
     +md
         margin-right: 26px
-        padding: 21px 95px
     +sm
         display: block
-        margin: 0 auto
-        // padding: 15px 0px
-        padding: 21px 95px
-        margin-bottom: 16px
+        margin: 0 0 16px 0
     +ms
         width: 100%
-        padding: 15px
 
-.tokensHero__btn:last-child
-    padding: 19px 118px
+.hero-link__item:last-child
+    margin-right: 0
+
+.btn_white-border:hover
+    background-color: #1d354e
+    color: #ffffff
+
+.btn_white-border
     background-color: #ffffff
     color: #1d354e
-    border-radius: 32px
     border: 3px solid #1d354e
-    margin-right: 0
-    +md
-        padding: 18px 80px
-    +sm
-        margin: 0 auto
-    +ms
-        padding: 12px
 
 .tokensHero:before
     content: url(../img/box-tokens.png)
@@ -142,3 +152,22 @@
         top: 115%
     +sm
         display: none
+
+// .benefits-block__item:nth-child(1) .benefits-block__ico:before
+//     content: url(/img/elliot.svg)
+
+// .benefits-block__item:nth-child(2) .benefits-block__ico:before
+//     content: url(/img/basic.svg)
+
+// .benefits-block__item:nth-child(4) .benefits-block__ico:before
+//     content: url(/img/api.svg)
+
+// .benefits-block__item:nth-child(5) .benefits-block__ico:before
+//     content: url(/img/improved.svg)
+
+// .benefits-block__item:nth-child(7) .benefits-block__ico:before
+//     content: url(/img/adding.svg)
+
+// .benefits-block__item:nth-child(8) .benefits-block__ico:before
+//     content: url(/img/release.svg)
+

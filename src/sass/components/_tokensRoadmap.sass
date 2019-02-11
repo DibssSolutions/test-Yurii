@@ -24,7 +24,7 @@ main
     left: 50%
     transform: translateX(-25%)
     +md
-        content: url(../img/roadmap-tablet2.png)
+        content: url(../img/roadmap-tablet3.png)
         position: absolute
         z-index: -1
         left: 50%
@@ -68,7 +68,7 @@ main
 .benefits-block
     display: flex
     flex-direction: column
-    // margin-top: 155px
+
     +md
         // margin-top: 200px
     +sm
@@ -91,16 +91,12 @@ main
             font-size: 14px
             line-height: 22px
     &__ico img
-        margin: 5px 0px 0 0
-        +md
-            // margin: -50px 22px 0 0
         +sm
             display: none
 
 .benefits-block__item
     display: flex
     width: 50%
-    // padding: 0px 0 195px 0
     +sm
         padding-top: 0
         padding-bottom: 0 
@@ -111,8 +107,7 @@ main
         position: relative
 
 .benefits-block__item:nth-child(1)
-    // padding-top: 145px
-    align-self: flex-end   
+    align-self: flex-end
     +sm
         padding-top: 0
         padding-bottom: 30px
@@ -146,7 +141,7 @@ main
 .benefits-block__item:nth-child(7)
     align-self: flex-end
     +sm
-        margin-top: 218px
+        margin-top: 191px
         padding-left: 46px
         margin-right: 11px
         align-self: flex-end
@@ -164,47 +159,47 @@ main
         padding-bottom: 30px
         border-left: 8px dotted #09a5b0
 
-.benefits-block__item:first-child:before
-    +sm
-        content: url(../img/10-17.png)
-        position: absolute
-        top: -32px
-        left: -32px
+// .benefits-block__item:first-child:before
+//     +sm
+//         content: url(../img/10-17.png)
+//         position: absolute
+//         top: -32px
+//         left: -32px
 
-.benefits-block__item:nth-child(2):before
-    +sm
-        content: url(../img/11-17.png)
-        position: absolute
-        top: -32px
-        left: -32px
+// .benefits-block__item:nth-child(2):before
+//     +sm
+//         content: url(../img/11-17.png)
+//         position: absolute
+//         top: -32px
+//         left: -32px
 
-.benefits-block__item:nth-child(4):before
-    +sm
-        content: url(../img/01-18.png)
-        position: absolute
-        top: -32px
-        right: -32px
+// .benefits-block__item:nth-child(4):before
+//     +sm
+//         content: url(../img/01-18.png)
+//         position: absolute
+//         top: -32px
+//         right: -32px
 
-.benefits-block__item:nth-child(5):before
-    +sm
-        content: url(../img/03-18.png)
-        position: absolute
-        top: -32px
-        right: -32px
+// .benefits-block__item:nth-child(5):before
+//     +sm
+//         content: url(../img/03-18.png)
+//         position: absolute
+//         top: -32px
+//         right: -32px
 
-.benefits-block__item:nth-child(7):before
-    +sm
-        content: url(../img/04-18.png)
-        position: absolute
-        top: -32px
-        left: -32px
+// .benefits-block__item:nth-child(7):before
+//     +sm
+//         content: url(../img/04-18.png)
+//         position: absolute
+//         top: -32px
+//         left: -32px
 
-.benefits-block__item:nth-child(8):before
-    +sm
-        content: url(../img/033-18.png)
-        position: absolute
-        top: -32px
-        left: -32px
+// .benefits-block__item:nth-child(8):before
+//     +sm
+//         content: url(../img/033-18.png)
+//         position: absolute
+//         top: -32px
+//         left: -32px
 
 .roadmap-img-two:before
     +sm
@@ -246,88 +241,197 @@ main
         align-self: flex-end
 
 .benefits-block__desc
-    padding-left: 20px
     +md
         padding-left: 16px
 .benefits-block__item:first-child .help
-    margin: 145px 0 195px 0
-    padding-left: 20px
+    margin: 130px 0 0 0
+    height: 300px
     +md
-        margin: 90px 0 110px 0
-        padding-left: 25px
+        height: 230px
+        margin: 55px 0 0px 0
     +sm
-        margin: 0
+        height: auto
         padding: 0
+        margin: 0
 
 .benefits-block__item:nth-child(2) .help
     padding-right: 120px
+    margin-top: 80px
     +md
+        margin-top: 55px
         padding-right: 40px
+    +sm
+        margin-top: 0
 
 .benefits-block__item:nth-child(2) .benefits-block__subtitle
     max-width: 270px
 
 .benefits-block__item:nth-child(4) .help
-    padding-left: 20px
-    margin-bottom: 150px
+    margin-top: 80px
     +md
-        margin-bottom: 60px
-        padding-left: 36px
-        margin-top: -20px
+        margin-top: 55px
     +sm
         margin: 0
         padding: 0
 
 
 .benefits-block__item:nth-child(5) .help
-    padding-right: 110px
+    padding-right: 90px
+    margin-top: 80px
     +md
-        padding-right: 60px
-        margin-bottom: 95px
+        padding-right: 30px
+        margin-top: 55px
     +sm
         padding: 0
         margin: 0
 
 .benefits-block__item:nth-child(7) .help
-    padding-left: 20px
+    margin-top: 80px
+    +md
+        margin-top: 55px
     +sm
         padding: 0
+        margin-top: 30px
 
 .benefits-block__item:nth-child(7) .benefits-block__text
     max-width: 300px
 
 .benefits-block__item:nth-child(8) .help
+    margin-top: 80px
     padding-right: 30px
     +md
+        margin-top: 55px
         padding-right: 15px
+    +sm
+        margin-top: 0
 
 .benefits-block__item:nth-child(8) .benefits-block__text
     max-width: 300px
 .help
     display: flex
-    margin: 0px 0 180px 0
-    height: 200px
+    height: 300px
+    padding-left: 70px
     +md
-        margin: 0 0 80px 0
+        height: 230px
+        padding-left: 50px
     +sm
         height: auto
-        margin: 0
+        padding: 0
 
-.lem
+.lem-left
+    position: absolute
+    width: 72px
+    height: 72px
+    background: #09a5b0
+    border-radius: 72px 72px 72px 10px
+    right: -4%
+    top: -3%
+    +md
+        width: 55px
+        height: 55px
+
+.lem-right
     position: absolute
     width: 72px
     height: 72px
     background: #09a5b0
     border-radius: 72px 72px 10px
-    right: -2%;
-    top: 66%;
+    +md
+        width: 55px
+        height: 55px
 
-.lem div
+.benefits-block__item:first-child .lem-right
+    left: -15%
+    top: 10%
+    +md
+        left: -5%
+        top: 0%
+    +sm
+        left: 0
+        transform: translate(-55%,-55%)
+        top: 0
+
+.benefits-block__item:nth-child(2) .lem-left
+    +sm
+        border-radius: 72px 72px 10px
+        left: 0
+        transform: translate(-58%, -50%)
+
+.benefits-block__item:nth-child(4) .lem-right
+    left: -12%
+    top: -5%
+    +md
+        left: -3%
+        top: -3%
+    +sm
+        left: 94%
+        transform: translate(-6%,-50%)
+        border-radius: 72px 72px 72px 10px
+        top: 0
+
+.benefits-block__item:nth-child(5) .lem-left
+    right: -3%
+    top: -7%
+    +sm
+        right: 0
+        transform: translate(58%,-50%)
+        top: 0
+
+.benefits-block__item:nth-child(7) .lem-right
+    left: -13%
+    top: -7%
+    +md
+        left: -10%
+        top: -2%
+    +sm
+        transform: translate(-57%,20%)
+        left: 0
+        top: 0
+
+.benefits-block__item:nth-child(8) .lem-left
+    right: -7%
+    top: -6%
+    +sm
+        left: 0
+        top: 0
+        border-radius: 72px 72px 10px
+        transform: translate(-57%, -20%)
+
+.lem_white
+    background-color: #ffffff
+    .lem__text
+        color: #1d354e
+.lem__text
     position: absolute
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
-    
+    color: #fefeff
+    text-align: center
+    line-height: 15px
+    span
+        font-size: 24px
+        font-weight: 500
+        letter-spacing: 1.2px
+        +md
+            font-size: 18px
+    p
+        font-weight: 300
+        letter-spacing: 0.6px
+        font-size: 12px
+        +md
+            font-size: 9px
 
+.benefits-ico-tablet
+    display: none
+    +md
+        display: block
+
+.benefits-ico-desctop
+    position: absolute
+    left: 10px
+    transform: translate(-10%,10%)
+    +md
+        display: none
 
 
